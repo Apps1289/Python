@@ -26,3 +26,18 @@ for ntg in list2:
         print("Found it!!")
 else:
     print("Done")
+
+# WAP TO PRINT A FACTORIAL OF A NUMBER
+n = 5
+fact = 1
+for i in range(1,n+1):
+    fact = fact * i
+print("Factorial of a num is ",fact)
+
+#WAP to print factors of a number
+n = 36
+for i in range(1,n+1):
+    if (n % i == 0):
+        print(i,end="\t")
+else:
+    print("\nDone")
