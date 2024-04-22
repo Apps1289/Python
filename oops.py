@@ -15,10 +15,21 @@ class Person:
      def __init__(self,fname):  #> here self argument is the most which calls the object
         self.name = fname
         # print("We are inside init function")
-# s2=Person()
+# s2=Person() # >>just creating an object of a class, it access the __init__ function
 s2=Person("Rajesh")
 print(s2.name)
-# just creating an object of a class, it access the __init__ function
+
+#day_2 of OPPS
+class students:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+s3=students("Arjun",85)
+print(f"{s3.name} has scored {s3.marks}")
+
+s4=students("Prakash",90)
+print(s4.name,s4.marks)
+
 
 
         
