@@ -33,3 +33,28 @@ class students:
 
 s1 = students("Abhi",[75,85,90])
 print(s1.get_avg())
+
+
+# create account class with two attributes: balance, acount_number
+# create methods for credit, debit and print the balance
+
+class account:
+    def __init__(self,blc,acc):
+        self.balance = blc
+        self.account_no = acc
+
+    def credit(self,amount):
+        self.balance += amount
+        print(f"Rs.{amount} was credited")
+        print(f"Now the balance after credit is:",self.get_blc())
+    def debit(self,amount):
+        self.balance -= amount
+        print(f"Rs.{amount} was debitted")
+        print(f"Now the balance after debit is:",self.get_blc())
+
+    def get_blc(self):
+        return self.balance
+
+s1 = account(10000,7250403274)
+s1.credit(1000)
+s1.debit(1000)
