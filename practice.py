@@ -40,3 +40,47 @@ class account:
 s1 = account(10000,12899821)
 s1.credit(1000)
 s1.debit(1000)
+
+
+#> Program to calculate square root!
+
+n = 4
+result = n ** 0.5
+print("Square root is:",result)
+
+#> program to swap two values
+
+a= 5
+b= 6
+temp = a
+a = b
+b = temp
+
+print(a)
+print(b)
+
+# > check leap year
+year = 2004
+if (year % 400 == 0) and (year % 100 == 0):
+    print(year, "is leap year")
+elif (year % 4 == 0) and (year % 100 != 0):
+    print(year, "is leap year")
+else:
+    print(year,"is not a leap year")
+
+#> check if prime num or not
+
+n = 7
+
+for i in range(2,24):
+    if (n % i !=0):
+        print("Prime number")
+    else:
+        print("Not prime num")
+    break
+
+
+#> 
+num= 1234
+num2 = str(num)
+print(len(num2))
